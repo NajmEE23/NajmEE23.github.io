@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+    html,body{
+        height: 100%;
+    }
+p { 
+    background-color: darkgrey;
+    border: 3px solid powderblue;
+     padding: 10px;
+     margin: 20px;
+}
+h1 {
+    font-family: Inter;
+  font-size: 200%;
+}
+td {
+    font-family: courier;
+}
+img {
+    width:200px;height:200px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgb(140, 139, 139, 0.9);
+}
+
+ul {
+    display: flex ;
+    justify-content: space-evenly;
+    border-bottom: 2px solid darkgray;
+}
