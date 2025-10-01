@@ -19,20 +19,30 @@ body {
 
  
 
-div {
-     
-     
-     padding: 30px;
-     margin-bottom: 30px;
+
  
-  
-  display: flex
-
-
-
+  main {
+    background-color: 41, 40, 40;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
 }
+
+ .red{
+    background-color: 41,40,40;
+    grid-column: 1 /-1;
+    text-align: center;
+    color: white;
+ }
+
+
 h1 {
     color: white;
+    margin-top: 60px;
     text-align: center;
     
     
@@ -42,37 +52,39 @@ p {
     color: white;
     
      text-align: right; 
-    padding: 10px;
-    margin: 20px;
+    padding: 0px;
+    margin: 0px;
     
      
 }
 
 img {
      
-        /* float: left;  */
-        width: 300px; height: 300px;
+         
+        width: 350px;
 }
     </style>
 </head>
 <body>
-        
+        <main>
+            <div class="red"> 
     <h1 style="font-size:300%;">Min Sida</h1>
-      <div>
+      </div>
     <img src="https://unsplash.it/300" alt="Crocodile">
+    
 
    <div>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur in similique facilis perferendis earum tempore et quo ipsa laborum, recusandae, nisi accusamus. Cupiditate dolore consectetur magni ex nam reprehenderit.</p>
-    </div>
-<div> 
+    <br>
+ 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas itaque, neque numquam beatae similique inventore earum. Culpa, facilis modi. Ullam dicta laborum soluta provident voluptatem cum quod debitis harum sunt!</p>
-    </div>
-   <div> 
+    <br>
+    
 
     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ullam esse facere, delectus libero impedit veritatis atque, nemo reprehenderit quis distinctio maiores. Aliquid voluptate pariatur laborum. Explicabo laudantium error perspiciatis!</p>
-     </div>
+     
      
       </div>
-       
+       </main>
 </body>
 </html>
