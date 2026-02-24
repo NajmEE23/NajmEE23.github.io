@@ -31,15 +31,52 @@
         </div>
 
 
+        </header>
+
+
+
 
 
         <div class="portfolio-section">
             <h2 class="section-title" > vad jag skapat</h2>
-             <div class="card-grig">
+             <div class="card-grid">
                 <div class="project-card">
                     <div class="card-image">💖
                         <div class="card-content">
-                            <h3 class="card-title" > min första företag</h3>
+                            <h3 class="card-title" > första</h3>
+                            <p class="card-description"> bil företag </p> 
+                            <div class="card-tags">
+                                <span class="tag"> JavaSript</span>
+                                <span class="tag"> Html5 </span>
+                                <span class="tag"> Game Dev</span>
+
+
+                            </div>
+
+                            <div class="like-section">
+                                <button class=" like-button"onClick="togglelike(3)">
+                                    <span id="heart-3">❤️</span>
+                                    Gilla
+                                    </button>
+                                    <span class="like-counter"id="count-3"> 12 gillningar</span>
+                               
+
+
+
+                            </div>
+
+                         </div>
+
+
+                    </div>
+
+
+                </div>
+                x
+                <div class="project-card">
+                    <div class="card-image">💖
+                        <div class="card-content">
+                            <h3 class="card-title" > andra</h3>
                             <p class="card-description"> bil företag </p>
                             <div class="card-tags">
                                 <span class="tag"> JavaSript</span>
@@ -68,20 +105,11 @@
 
 
                 </div>
-
-
-             </div>
-
-
-
-        </div>
-        <div class="portfolio-section">
-            <h2 class="section-title" > vad jag skapat</h2>
-             <div class="card-grig">
+                x
                 <div class="project-card">
                     <div class="card-image">💖
                         <div class="card-content">
-                            <h3 class="card-title" > min första företag</h3>
+                            <h3 class="card-title" > trädje</h3>
                             <p class="card-description"> bil företag </p>
                             <div class="card-tags">
                                 <span class="tag"> JavaSript</span>
@@ -110,57 +138,34 @@
 
 
                 </div>
-
-
-             </div>
-
-
-
-        </div>
-        <div class="portfolio-section">
-            <h2 class="section-title" > vad jag skapat</h2>
-             <div class="card-grig">
-                <div class="project-card">
-                    <div class="card-image">💖
-                        <div class="card-content">
-                            <h3 class="card-title" > min första företag</h3>
-                            <p class="card-description"> bil företag </p>
-                            <div class="card-tags">
-                                <span class="tag"> JavaSript</span>
-                                <span class="tag"> Html5 </span>
-                                <span class="tag"> Game Dev</span>
-
-
-                            </div>
-
-                            <div class="like-section">
-                                <button class=" like-button"onClick="togglelike(1)">
-                                    <span id="heart-1">❤️</span>
-                                    Gilla
-                                    </button>
-                                    <span class="like-count"id="count-3"> 12 gillningar</span>
-                               
-
-
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
+                x
 
              </div>
 
 
 
         </div>
+        
  
-    </header>
+    <script>
+        function togglelike(projectId) {
+            const button= document.querySelector(`#heart-${projectId }`).parentNode
+            const heart=  document.querySelector(`#heart-${projectId }`)
+
+            if (button.classList.contains(`liked`)) {
+                button.classList.remove(`liked`)
+                herat.textContent ="🤍"
+
+            } else {
+                button.classList.add(`liked`)
+                herat .textContent ="🩵"
+                console.log("like")
+        }
+        }
+        
+
+
+    </script>
  
  
 </body>
