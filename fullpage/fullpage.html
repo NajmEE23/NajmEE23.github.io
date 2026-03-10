@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="fullpage.css">
 </head>
 <body>
+
+<!--
+NAVIGATION
+
+Syfte:
+Navigationen gör det möjligt för användaren att snabbt navigera mellan olika delar av sidan.
+
+Innehåll:
+• Logotyp / företagsnamn
+• Menylänkar till olika sektioner
+
+Teknisk lösning:
+Flexbox används för att placera logotypen till vänster och menyn till höger.
+
+Design:
+Navigationen använder en gradientbakgrund och hover-effekter för bättre interaktivitet.
+
+Responsivitet:
+På mindre skärmar ändras layouten till vertikal meny.
+-->
+
+
+
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">Mitt Företag</a>
@@ -19,6 +42,30 @@
         </div>
     </nav>
    
+
+<!--
+HERO HEADER
+
+Syfte:
+Hero-sektionen är den första delen av sidan som användaren ser.
+Den ska skapa ett starkt första intryck och presentera företaget.
+
+Innehåll:
+• Stor rubrik med företagsnamn
+• Kort beskrivning av tjänster
+• Call-to-action knappar
+
+Teknik:
+CSS gradient används som bakgrund.
+Flexbox används för att centrera innehållet.
+
+Design:
+Stor typografi används för att göra rubriken tydlig.
+En mörk overlay gör texten mer läsbar.
+-->
+
+
+
     <header class="hero-header">
         <div class="hero-content">
             <h1 class="hero-title">Välkommen till Najm AB </h1>
@@ -33,6 +80,27 @@
 
         </header>
 
+<!--
+PROJEKT / BILKORT
+
+Syfte:
+Denna sektion visar exempel på tjänster eller bilar som företaget erbjuder.
+
+Struktur:
+Varje kort innehåller:
+• Bild eller ikon
+• Titel
+• Beskrivning
+• Taggar
+• Gilla-knapp
+
+Teknik:
+CSS Grid används för att skapa en flexibel layout.
+Hover-effekter används för att göra korten mer interaktiva.
+
+JavaScript:
+En enkel funktion används för att toggla en gilla-knapp.
+-->
 
 
 
@@ -43,7 +111,9 @@
             <div class="card-grid">
                 <!--Projekt 1-->
                 <div class="project-card">
-                    <div class="card-image">🚗</div>
+                    
+                    <div class="card-image"><img src="erik-mclean-ZRns2R5azu0-unsplash.jpg" alt="GTR" width="400" height="200"></div>
+                    
                     <div class="card-content">
                         <h3 class="card-title"> Nissan GTR R35</h3>
                         <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, assumenda minima vero debitis nostrum neque ab consectetur dolore sit distinctio totam, velit perferendis quas possimus placeat eos quo animi obcaecati.</p>
@@ -64,10 +134,10 @@
                     </div>
 
                 </div>
-                <!--End Projekt 1-->
+                
                 <!--Projekt 2-->
                 <div class="project-card">
-                    <div class="card-image">🚗</div>
+                    <div class="card-image"> <img src="borislav-ivanov-3r4korIgxe8-unsplash.jpg" alt="Audi"  width="400" height="200" ></div>
                     <div class="card-content">
                         <h3 class="card-title">Audi RS3</h3>
                         <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, assumenda minima vero debitis nostrum neque ab consectetur dolore sit distinctio totam, velit perferendis quas possimus placeat eos quo animi obcaecati.</p>
@@ -76,6 +146,7 @@
                             <span class="tag">100,000$</span>
                             <span class="tag">450 HP</span>
                             <span class="tag">Limited Edition</span>
+                           
                         </div>
 
                         <div class="like-section">
@@ -89,9 +160,10 @@
 
                 </div>
 
-    
+                    <!--Projekt 3-->
                 <div class="project-card">
-                    <div class="card-image">🚗</div>
+                    <div class="card-image"><img src="conor-samuel-63KipAWXNSQ-unsplash.jpg" alt="Ferrari" width="400" height="200"></div>
+                    
                     <div class="card-content">
                         <h3 class="card-title">FERRARI 812 GTS</h3>
                         <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, assumenda minima vero debitis nostrum neque ab consectetur dolore sit distinctio totam, velit perferendis quas possimus placeat eos quo animi obcaecati.</p>
@@ -136,6 +208,23 @@
 
     </script>
     
+      <!--FOOTER
+
+Syfte:
+Footern innehåller extra information och kontaktuppgifter.
+
+Innehåll:
+• Kort information om företaget
+• Snabblänkar till olika sektioner
+• Kontaktinformation
+• Sociala medier
+
+Teknik:
+CSS Grid används för att organisera innehållet i kolumner.
+
+Responsivitet:
+På mobil visas kolumnerna under varandra.
+-->
 
 
  <footer>
@@ -179,8 +268,23 @@
     </footer>
 
 
+ <!--KONTAKTSEKTION
 
+Syfte:
+Gör det möjligt för användare att kontakta företaget direkt från webbsidan.
 
+Innehåll:
+• Namnfält
+• Emailfält
+• Meddelande
+• Skicka-knapp
+
+Design:
+Formuläret är centrerat och använder rundade kanter och fokus-effekter.
+
+Responsivitet:
+Formuläret anpassas automatiskt till mindre skärmar.
+-->
 
 
     <section id="kontakt">
